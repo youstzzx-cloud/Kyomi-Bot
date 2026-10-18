@@ -1,0 +1,16 @@
+{
+  "name": "kyomi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kyomi dá o cargo de Membro e manda boas-vindas quando alguém entra.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0"
+  }
+}
