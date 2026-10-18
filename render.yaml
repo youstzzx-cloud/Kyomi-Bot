@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kyomi
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: WELCOME_CHANNEL_ID
+        sync: false
+        
