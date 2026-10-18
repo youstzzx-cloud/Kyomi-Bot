@@ -6,7 +6,7 @@ function pronta(client) {
     console.log(`Kyomi acordou como ${readyClient.user.tag}. Servidores: ${guilds || "nenhum"}.`);
     readyClient.user.setPresence({
       status: "online",
-      activities: [{ name: "as boas-vindas", type: ActivityType.Watching }],
+      activities: [{ name: "Minecraft", type: ActivityType.Playing }],
     });
   });
 }
