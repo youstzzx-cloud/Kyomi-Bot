@@ -4,6 +4,7 @@ const config = require("./config");
 const pronta = require("./eventos/pronta");
 const entrada = require("./eventos/entrada");
 const saida = require("./eventos/saida");
+const comandos = require("./eventos/comandos");
 
 if (!config.token) {
   console.error("Falta a variável DISCORD_TOKEN. Não coloque o token no código.");
@@ -17,6 +18,7 @@ const client = new Client({
 pronta(client);
 entrada(client);
 saida(client);
+comandos(client);
 
 const port = Number(process.env.PORT) || 3000;
 http
